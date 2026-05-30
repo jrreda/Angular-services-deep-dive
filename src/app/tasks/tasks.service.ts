@@ -4,9 +4,9 @@ import type { Task, TaskStatus } from './task.model';
 import { LoggingService } from '../logging.service';
 
 // More efficient bundle chunking
-@Injectable({
-  providedIn: 'root',
-})
+// @Injectable({
+//   providedIn: 'root',
+// })
 export class TasksService {
   private tasks = signal<Task[]>([]);
   private loggingService = inject(LoggingService);
