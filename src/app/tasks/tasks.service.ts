@@ -2,9 +2,10 @@ import { Injectable, signal } from '@angular/core';
 
 import type { Task, TaskStatus } from './task.model';
 
-@Injectable({
-  providedIn: 'root',
-})
+// More efficient bundle chunking
+// @Injectable({
+//   providedIn: 'root',
+// })
 export class TasksService {
   private tasks = signal<Task[]>([]);
 
